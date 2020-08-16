@@ -24,16 +24,20 @@ body{
 .layout{
     height: 100vh;
     width: 100vw;
-    display: grid;
-    grid-template-rows: [navbar-s]46px[navbar-e content-s]ifr[content-e] ;
-    grid-template-columns: [s]1fr[e];
-
+    display: flex;
+    flex-direction: column;
+ 
     &__navbar{
-        grid-row: navbar-s/navbar-e;
-        grid-column: s/e;
+
+   height: 56px;
     }
     &__content{
-        grid-column: s/e;
-        grid-row: content-s/content-e;
+      height: 450px;  
+      img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      } 
     }
+
 }

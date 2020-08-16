@@ -5,17 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCSS NAVBAR</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://kit.fontawesome.com/a4eea9f9af.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="layout">
 
         <div class="layout__navbar navbar">
-            <a href="https://www.twitter.com">Twitter</a>
-            <a href="https://www.facebook.com">Facebook</a>
-            <a href="https://www.google.com">Google</a>
+            <i class="navbar__menu fas fa-bars"></i>
+             <img class="navbar__logo" src="https://lovesvg.com/wp-content/uploads/2019/07/Soccer-SVG-Cut-File-9486-260x185.png"/> 
+          <div class='navbar__search search'>
+              <div class="search__input">
+                  <input placeholder="search">
+              </div>
+              <div class="search__icon">
+                <i class="fas fa-search"></i>
+            </div>
+            
+          </div>
+          <div class="navbar__actions actions">
+            <a target="_blank" href="www.youtube.com"><i class="fas fa-video"></i></a>   
+            <a target="_blank" href="www.youtube.com"><i class="fas fa-th"></i></a>   
+            <a target="_blank" href="www.youtube.com"><i class="fas fa-share"></i></a>   
+            <a target="_blank" href="www.youtube.com"><i class="fas fa-bell"></i></a>   
+          </div>
+          <img src='https://graph.facebook.com/v2.10/1969675499844809/picture' class="navbar__profile"/>
         </div>
         <div class="layout__content content">
-            page content goes here
+            <img src='https://images.unsplash.com/photo-1555797487-a1f30b5d8d55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80' class="content__cover"/>
         </div>
     </div>
 
